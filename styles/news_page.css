@@ -1,0 +1,87 @@
+body{
+  margin:0px;
+}
+p{
+  margin-block:0px;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-size:4.975vw;
+  color:var(--darkCol);
+  display:inline-block;
+  font-family:'Agrandir Grand Heavy';
+}
+body:not(.link:hover) img{
+  opacity:0;
+}
+body:has(.link:hover) img{
+  opacity:1;
+}
+body:has(.link:hover) .background{
+  filter:brightness(0.3);
+}
+body:has(.link:hover) .logo{
+  filter:brightness(1);
+}
+body:has(.link:hover) .words:not(.link:hover){
+  filter:brightness(0.75);
+}
+img{
+  position:fixed;
+  height:80%;
+  object-fit:contain;
+  transition:opacity 300ms ease;
+}
+
+.link{
+  height:5.9675vw;
+}
+.link:hover{
+  color:var(--lightCol);
+}
+.words{
+  transition:color 300ms ease;
+}
+.background{
+  transition:filter 300ms ease;
+}
+
+.newsList{
+  width:fit-content;
+  float:left;
+}
+.imgList{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  height:100vh;
+}
+
+.background{
+  background-color:var(--lightCol);
+  top:0;
+  left:0;
+  height:100vw;
+  width:100vw;
+  position:fixed;
+  z-index:-1;
+}
+
+body:has(.alserkalOnline:hover) img:not(#alserkalOnline){ opacity:0; }
+body:has(.cultureHubMe:hover) img:not(#cultureHubMe){ opacity:0; }
+body:has(.globalArtDaily:hover) img:not(#globalArtDaily){ opacity:0; }
+body:has(.stirworld:hover) img:not(#stirworld){ opacity:0; }
+body:has(.theNational:hover) img:not(#theNational){ opacity:0; }
+body:has(.artFervor:hover) img:not(#artFervor){ opacity:0; }
+body:has(.alArabiyaNews:hover) img:not(#alArabiyaNews){ opacity:0; }
+body:has(.theFilipinoTimes:hover) img:not(#theFilipinoTimes){ opacity:0; }
+body:has(.gulfNews:hover) img:not(#gulfNews){ opacity:0; }
+body:has(.gulfToday:hover) img:not(#gulfToday){ opacity:0; }
+body:has(.voguePhilippines:hover) img:not(#voguePhilippines){ opacity:0; }
+body:has(.khaleejTimes:hover) img:not(#khaleejTimes){ opacity:0; }
+
+
+@media (width < 1130px){
+  .background{
+    height:100%;
+  }
+}

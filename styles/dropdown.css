@@ -1,0 +1,54 @@
+.dropdown{
+  user-select:none;
+  background-color:var(--lightCol);
+  position:fixed;
+  top:-100%;
+  height:100vh;
+  width:100vw;
+  z-index:1;
+  transition:background-color 300ms ease;
+  animation-fill-mode:forwards;
+}
+.dropdown:has(.dropdownLink:hover){
+  background-color:#212120;
+}
+.dropdownLinkContainer{
+  float:right;
+  margin-right:5%;
+  width:75%;
+  display:flex;
+  text-transform:uppercase;
+  font-family:'Agrandir Grand Heavy';
+  flex-direction:column;
+}
+.dropdownLink{
+  text-align:right;
+  text-decoration:none;
+  font-size:6.25vw;
+  color:var(--darkCol);
+  transition:color 300ms ease;
+}
+.dropdownLink:hover{
+  color:var(--lightCol);
+}
+.dropdown:has(.dropdownLink:hover) .dropdownLogo{
+  filter:brightness(1);
+}
+.dropdownLogo{
+  filter:brightness(0.25);
+  opacity:1 !important;
+  height:5.5em;
+  margin:15px;
+  position:static;
+  transition:filter 300ms ease;
+}
+
+@keyframes dropping-in{
+  0%{ top:-100%; }
+  50%{ top:1%; }
+  100%{ top:0%; }
+}
+@keyframes dropping-out{
+  0%{ top:0%; }
+  100%{ top:-100%; }
+}

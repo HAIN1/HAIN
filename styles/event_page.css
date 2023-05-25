@@ -1,0 +1,239 @@
+body{
+  margin:0px;
+  color:var(--eventCol);
+  overflow:hidden;
+}
+p{
+  margin-block:0px;
+}
+
+.topCard{
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:100vh;
+  width:100vw;
+  cursor:pointer;
+  position:relative;
+  isolation:isolate;
+}
+.arrow{
+  position:absolute;
+  left:50%;
+  bottom:1vw;
+  font-size:3.5vw;
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav > *{
+  font-size:1.5vw;
+  padding:1.75vw;
+}
+.nav > *, .subtitle{
+  text-transform:uppercase;
+}
+.nav p, .subtitle{
+  font-family:'Arimo Regular';
+}
+.ticketLink{
+  color:var(--eventCol);
+  transition:color 300ms ease;
+  text-decoration:underline;
+  user-select:none;
+}
+.ticketLink:hover{
+  color:var(--lightHov);
+}
+
+.texts{
+  position:absolute;
+  top:20%;
+  left:19.6%;
+  user-select:none;
+}
+.title, .dateDetails > *, .nav a{
+  font-family:'Agrandir Regular';
+}
+.title, .dateDetails > *{
+  font-size:5.5vw;
+}
+.dateDetails > p{
+  width:fit-content;
+}
+.title{
+  width:37vw;
+}
+.subtitle{
+  font-size:2.5vw;
+  width:26vw;
+  margin-left:1.25vw;
+  margin-top:-1vw;
+}
+
+@keyframes title{
+  100%{ translate:-35% 20%; }
+}
+@keyframes subtitle{
+  100%{ translate:-35% -40%; }
+}
+@keyframes date{
+  100%{ translate:80% 0%; }
+}
+@keyframes card{
+  100%{ height:90vh; }
+}
+@keyframes titleRev{
+  0%{ translate:-35% 20%; }
+  100%{ translate:0% 0%; }
+}
+@keyframes subtitleRev{
+  0%{ translate:-35% -40%; }
+  100%{ translate:0% 0%; }
+}
+@keyframes dateRev{
+  0%{ translate:80% 0%; }
+  100%{ translate:0% 0%; }
+}
+@keyframes cardRev{
+  0%{ height:90vh; }
+  100%{ height:100vh; }
+}
+
+.botCard{
+  display:flex;
+  padding-bottom:5vw;
+}
+.botCard > div{
+  display:flex;
+  flex-direction:column;
+}
+.botLeftCard{
+  align-items:center;
+  width:55%;
+  height:min-content;
+  position:relative;
+  isolation:isolate;
+}
+.botRightCard{
+  width:45%;
+  align-items:center;
+  padding:4vw;
+}
+.botLeftCard p:first-child{
+  font-size:6vw;
+  padding:4vw;
+  text-align:right;
+  text-transform:uppercase;
+  font-family:'Agrandir Regular';
+}
+.botLeftCard img{
+  width:30vw;
+}
+.botLeftCard p:not(:first-child), .botLeftCard pre{
+  position:absolute;
+  font-family:'Arimo Regular';
+  font-size:1.75vw;
+  margin:0px;
+}
+.ticket{
+  bottom:19vw;
+}
+.dateTimeTitle{
+  bottom:15vw;
+  left:26%;
+}
+.price{
+  bottom:2.7%;
+  left:33.2%;
+}
+.amount{
+  bottom:2.7%;
+  left:55.4%;
+}
+
+.botRightCard pre{
+  width:75%;
+  text-align:left;
+  word-break:break-word;
+  white-space:pre-wrap;
+  font-family:'Arimo Regular';
+  font-size:1.2vw;
+  margin:0px;
+  line-height:1.8vw;
+}
+.botRightCard pre:not(:first-child){
+  margin-top:1vw;
+}
+.header1, .header2{
+  text-transform:uppercase;
+}
+.botRightCard input{
+  width:75%;
+  background-color:transparent;
+  border:none;
+  border-bottom:2px solid var(--eventCol);
+  height:5vw;
+  color:var(--eventCol);
+  font-size:1.5vw;
+}
+.botRightCard input::placeholder{
+  font-style:italic;
+  color:#848484;
+}
+
+.ticketMainWrapper{
+  position:relative;
+  isolation:isolate;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:1000px;
+  width:648px;
+  font-size:20px;
+  scale:75%;
+  translate:-12.5% -12.5%;
+}
+.ticketBackground{
+  background-size:100% 364px;
+  background-repeat:no-repeat;
+  background-position:top;
+  height:364px;
+  width:648px;
+}
+.ticketMainWrapper p{
+  font-family:'Agrandir Regular';
+  width:90%;
+}
+.ticketTitle, .ticketTiming{
+  font-size:30px;
+  margin-top:25px;
+}
+.ticketQR{
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  position:absolute;
+  bottom:65px;
+  left:50%;
+  translate:-50% 0%;
+  height:250px;
+  width:250px;
+}
+.ticketLogo{
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-image:var(--logo);
+  height:56px;
+  width:56px;
+  position:absolute;
+  bottom:15px;
+  left:15px;
+}
+.ticketLocation{
+  font-family:'Arimo Regular';
+  font-size:25px;
+  margin-top:25px;
+}

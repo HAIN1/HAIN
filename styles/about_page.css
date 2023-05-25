@@ -1,0 +1,125 @@
+body{
+  margin:0px;
+}
+h1{
+  font-weight:100;
+  text-transform:uppercase;
+  padding-top:15px;
+  padding-left:30px;
+  font-size:3.125vw;
+}
+hr{
+  border-color:var(--lightCol);
+}
+.background{
+  background-image:url('../images/backgrounds/about.png');
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  filter:brightness(0.75);
+}
+.leftContainer{
+  font-family:'Agrandir Wide Light';
+  color:var(--lightCol);
+  width:20%;
+  height:100vh;
+  border-right:2px solid var(--lightCol);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  position:fixed;
+}
+.infoWrapper{
+  font-size:1.1459vw;
+  display:flex;
+  flex-direction:column;
+}
+.infoWrapper > p{
+    margin-left: 1.63vw;
+    padding-top: 1vw;
+    height: 5vw;
+  margin-block:0px;
+}
+.mainWrapper{
+  display:flex;
+}
+
+.rightContainer{
+  color:var(--lightCol);
+  width:80%;
+  text-transform:uppercase;
+  translate:25%;
+}
+.topDesc{
+  display:flex;
+  margin-top:calc(3.89vw + 30px);
+}
+.tdOne, .tdTwo{
+  width:50%;
+}
+.tdOne{
+  display:flex;
+  justify-content:center;
+}
+.tdTwo{
+  font-family:'Agrandir Grand Heavy';
+  font-size:4.48vw;
+}
+.tdTwo p{
+  word-wrap:break-word;
+  line-height:4.5vw;
+  margin-block-start:0.4em;
+  margin-block-end:0.25em;
+}
+.logo{
+  height:50px;
+  aspect-ratio:1/1;
+  margin:15px;
+  object-fit:contain;
+  display:inline-block;
+}
+.logoWrapper{
+  text-align:right;
+  position:sticky;
+  top:0;
+  z-index:2;
+}
+.desc1{
+  width:80%;
+  height:50%;
+  font-family:'Agrandir Regular';
+  border-top:2px solid var(--lightCol);
+  font-size:3.125vw;
+  line-height:3.3vw;
+  margin-block-end:0px;
+  translate:0px 100%;
+}
+.botDesc{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.botDesc > div{
+  border-top:2px solid var(--lightCol);
+  width:90%;
+}
+.botDesc > div p{
+  font-family:'Agrandir Regular';
+  margin-block-start:0.75em;
+  font-size:2.4vw;
+  padding-top:1em;
+}
+.teamDesc h1{
+  font-family:'Agrandir Grand Heavy';
+  margin-block:0.5em;
+  padding:0px;
+  font-size:4.69vw;
+}
+.hainDesc{
+  line-height:4.1vw;
+}

@@ -1,0 +1,70 @@
+.logoWrapper{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  pointer-events:none;
+  position:relative;
+  z-index:2;
+}
+.logo{
+  pointer-events:all;
+  height:3.89vw;
+  width:3.89vw;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  opacity:1 !important;
+  cursor:pointer;
+}
+.dark{
+  filter:brightness(0.25);
+}
+.logo > div{
+  background-image:var(--logo);
+  background-repeat:no-repeat;
+  background-size:200%;
+  height:1.945vw;
+  width:1.945vw;
+}
+.Hain{ background-position:0% 0%}
+.hAin{ background-position:100% 0%}
+.haIn{ background-position:0% 100%}
+.haiN{ background-position:100% 100%}
+
+@keyframes Hain-in{
+  0%{ translate:0% 0%; }
+  100%{ translate:100% 0%; }
+}
+@keyframes Hain-out{
+  0%{ translate:100% 0%; }
+  100%{ translate:0% 0%; }
+}
+
+@keyframes hAin-in{
+  0%{ translate:0% 0%; }
+  100%{ translate:0% 75%; }
+}
+@keyframes hAin-out{
+  0%{ translate:0% 75%; }
+  100%{ translate:0% 0%; }
+}
+
+@keyframes haIn-in{
+  0%{ translate:0% 0%; }
+  100%{ translate:100% 50%; }
+}
+@keyframes haIn-out{
+  0%{ translate:100% 50%; }
+  100%{ translate:0% 0%; }
+}
+
+@keyframes haiN-in{
+  0%{ translate:0% 0%; }
+  100%{ translate:0% 150%; }
+}
+@keyframes haiN-out{
+  0%{ translate:0% 150%; }
+  100%{ translate:0% 0%; }
+}

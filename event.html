@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no">
+    <meta charset="utf-8"/>
+    <title>HAIN</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/dropdown_event.css">
+    <link rel="stylesheet" href="styles/event_page.css">
+    <link rel="stylesheet" href="styles/ticketing_modal.css">
+    <link rel="stylesheet" href="styles/logo_calendar.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="scripts/event_click.js" type="text/javascript" defer></script>
+    <script src="scripts/json/events_json.js" type="text/javascript" defer></script>
+    <script src="scripts/event_reader.js" type="text/javascript" defer></script>
+    <script src="scripts/dropdown.js" type="text/javascript" defer></script>
+    <script src="scripts/ticketing.js" type="text/javascript" defer></script>
+  <body>
+    <div class="topCard">
+      <div class="nav">
+        <p></p>
+        <p class="ticketLink">get tickets</p>
+        <div class="logoWrapper">
+          <div class="logo">
+            <div class="Hain"></div>
+            <div class="hAin"></div>
+            <div class="haIn"></div>
+            <div class="haiN"></div>
+          </div>
+        </div>
+      </div>
+      <div class="texts">
+        <p class="title"></p>
+        <div class="dateDetails">
+          <p class="day"></p>
+          <p class="time"></p>
+        </div>
+        <p class="subtitle"></p>
+      </div>
+      <p class="arrow">↓</p>
+    </div>
+    <div class="botCard">
+      <div class="botLeftCard">
+        <p></p>
+        <img src="images/misc/barcode.png">
+        <p class="ticket">TICKET</p>
+        <pre class="dateTimeTitle"></pre>
+        <p class="price"></p>
+        <p class="amount">01 TICKETS</p>
+      </div>
+      <div class="botRightCard">
+        <pre class="header1">art made by winnie and sabi</pre>
+        <pre class="paragr1">Come to Hain and watch as Winnie Celestine and Sabi Pratik showcase their work as they say how they made it, and why they made it in the first place and explore the artistic mind of these two who turned what used to be scraps of trash to pieces of art.</pre>
+        <pre class="header2">\twinnie and sabi say their take on why they use scraps</pre>
+        <pre class="paragr2">Winnie Celestine and Sabi Pratik is well known for their art installations derived from scraps, or everyday objects that we don’t often bat an eye to, Sabi Patrik uses Cafeteria reciepts and recipes to make his collages while Winnie Celestine uses discarded food packaging and plastic utensils, which she reconfigure into sculptural installations that blur the lines between art, craft, and design. Their art which inspired artists all over the globe to use foreign materials to create art finally break their silence. come to Hain and watch as Winnie Celestine and Sabi Pratik showcase their art </pre>
+      </div>
+    </div>
+    <div class="modalWrapper">
+      <div class="modalMain">
+        <span class="closeModal"></span>
+        <div class="modalLeft">
+          <form class="form1">
+            <div class="modalFormDiv">
+              <div>
+                <p>First Name<sup>✦</sup></p>
+                <input type="text" placeholder="Lebron" required>
+              </div>
+              <div>
+                <p>Last Name<sup>✦</sup></p>
+                <input type="text" placeholder="James" required>
+              </div>
+            </div>
+            <p>Billing Address<sup>✦</sup></p>
+            <input type="text" placeholder="9313 Hamilton DriveEgg Harbor Township" required>
+            <p>Billing Address line 2<sup>✦</sup></p>
+            <input type="text" placeholder="NJ 08234" required>
+            <div class="modalFormDiv">
+              <div>
+                <p>City<sup>✦</sup></p>
+                <input type="text" placeholder="New York" required>
+              </div>
+              <div>
+                <p>Postal Code<sup>✦</sup></p>
+                <input type="text" placeholder="N2J 3S4" required>
+              </div>
+            </div>
+            <p>Contact Information<sup>✦</sup></p>
+            <input type="text" placeholder="Richardwaterson@gmail.com" required>
+            <input class="pn" type="text" placeholder="+971 58 203 4021" required>
+            <button class="pn next" type="button">N E X T</button>
+          </form>
+          <form class="form2">
+            <p class="paym">Payment Method<sup>✦</sup></p>
+            <div class="paym paymentMethod">
+              <div class="method">
+                <div data-method="visa" class="visaCard"></div>
+                <div data-method="mastercard" class="mastCard"></div>
+              </div>
+              <div class="method">
+                <div data-method="googlepay" class="googCard"></div>
+                <div data-method="applepay" class="applCard"></div>
+              </div>
+            </div>
+            <p class="hide">Card Information<sup>✦</sup></p>
+            <input class="hide" type="text" placeholder="1234 1234 1234 1234" required>
+            <div class="hide cardInfo">
+              <input class="half" type="text" placeholder="MM/YY" required>
+              <input class="half" type="text" placeholder="CVC" required>
+            </div>
+            <p>Name on Card<sup>✦</sup></p>
+            <input type="text" placeholder="Lebron James" required>
+            <div class="saveSecure">
+              <input type="checkbox">
+              <div>
+                <p><b>Securely save my information for 1-click checkout</b></p>
+                <p><i>Pay faster on Hain and everywhere link is accepted</i></p>
+              </div>
+            </div>
+            <button class="pn back" type="button">B A C K</button>
+            <button class="pn next" type="button">C O N F I R M</button>
+          </form>
+        </div>
+        <div class="modalRight">
+          <div class="modalPoster">
+            <div class="modalPosterText">
+              <p class="modalDay"></p>
+              <p class="modalTime"></p>
+            </div>
+            <p class="modalDescription"></p>
+          </div>
+          <div class="modalTicket">
+            <div class="modalTicketCounter">
+              <div class="ticketWrapper">
+                <div><p>Number of Tickets:</p></div>
+                <div class="numberInput">
+                  <i class="ticketCount">1</i>
+                  <div class="addsubTicket">
+                    <i data-action="addTicket">+</i>
+                    <i data-action="subTicket">-</i>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="ticketWrapper">
+                <div class="ticketDesc">
+                  <p>Tickets (<span class="ticketCount">1</span>)</p>
+                  <i><span class="ticketPrice">50</span> . 00 AED</i>
+                </div>
+                <div class="ticketDesc">
+                  <p>Fee</p>
+                  <i><span class="ticketFee">4</span> . 00 AED</i>
+                </div>
+              </div>
+              <hr>
+              <div class="ticketWrapper">
+                <div class="ticketDesc">
+                  <p>Total (includes VAT)</p>
+                  <i><span class="ticketTotal">54</span> . 00 AED</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="dropdownLinkContainer">
+        <a class="dropdownLink" href="exhibitions.html">exhibitions</a>
+        <a class="dropdownLink" href="artists.html">artist</a>
+        <a class="dropdownLink" href="calendar.html">events</a>
+        <a class="dropdownLink" href="soundbites.html">sound bites</a>
+        <a class="dropdownLink" href="about.html">about us</a>
+        <a class="dropdownLink" href="news.html">news/press</a>
+      </div>
+    </div>
+    <section id="ticketSend">
+      <div class="ticketMainWrapper">
+        <div class="ticketBackground"></div>
+        <p class="ticketTitle"></p>
+        <p class="ticketDescription"></p>
+        <p class="ticketTiming"></p>
+        <p class="ticketLocation">Alserkal Avenue Arts &amp; Cultural District - Warehouse G62 - Al Quoz Industrial Area 1 - Dubai</p>
+        <div class="ticketQR"></div>
+        <div class="ticketLogo"></div>
+      </div>
+    </section>
+  </body>
+</html>
