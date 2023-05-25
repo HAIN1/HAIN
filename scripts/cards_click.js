@@ -6,8 +6,12 @@ var project = m.querySelector('.hainsub');
 var desc = m.querySelector('.cardDesc');
 var sub = m.querySelector('.cardDescSub');
 
+// clicking on a "view this project" button will
+// open a card at the right side of the screen
+// with the project's details
 b.forEach(btn => {
   btn.addEventListener('click', event =>{
+    // plays an animation as well
     w.style.animation = 'cardSlide ease 300ms';
     w.style.animationFillMode = 'forwards';
     if(btn.dataset.art == 'foodformat'){
@@ -73,6 +77,7 @@ b.forEach(btn => {
   });
 });
 
+// clicking on the card will remove it
 w.addEventListener('click', event =>{
   w.style.animation = 'cardSlideRev ease 300ms';
   w.style.animationFillMode = 'forwards';
