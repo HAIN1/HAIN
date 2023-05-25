@@ -5,7 +5,7 @@ const calendarList = [
       {
         "day": "Monday",
         "date": "05",
-        "name": "Scrap Art<br>Winnie and Pratik",
+        "name": "Scrap Art<br>Winnie and Sabi",
         "time": "19:00"
       },
       {
