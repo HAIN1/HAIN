@@ -1,11 +1,13 @@
 var soundbites = JSON.parse(JSON.stringify(soundbitesList));
 const mainWrapper = document.querySelector('.mainWrapper');
 
+// displays soundbites from soundbites_json.js
 for(var i = 0; i < soundbites.length; i++){
   var newSection = document.createElement('section');
   newSection.classList.add('soundbiteWrapper');
   mainWrapper.appendChild(newSection);
   
+  // creates sections for each soundbite
   var sections = document.querySelectorAll('.soundbiteWrapper');
   var newDiv = document.createElement('div');
   newDiv.classList.add('detailLeft');
@@ -14,6 +16,7 @@ for(var i = 0; i < soundbites.length; i++){
   newDiv.classList.add('detailRight');
   sections[i].appendChild(newDiv);
   
+  // adds appropriate details for each section
   var detailLeft = document.querySelectorAll('.detailLeft');
   var detailRight = document.querySelectorAll('.detailRight');
   var newP = document.createElement('p');
