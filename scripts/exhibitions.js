@@ -1,3 +1,5 @@
+// plays a slideshow for the exhibition page
+// the user is able to scroll when it ends
 var cards = document.querySelectorAll('.animCard');
 var b = document.querySelector('.background');
 var b2 = document.querySelector('.background2');
@@ -91,6 +93,8 @@ setTimeout(function(){
   document.querySelector('html').style.overflowX = 'auto';
 }, 13350);
 
+// takes the user to the start of the page
+// when reloading
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
