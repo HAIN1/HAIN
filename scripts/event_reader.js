@@ -2,6 +2,7 @@ var params = new URLSearchParams(window.location.search);
 var eventName = params.get('event');
 var eventList = JSON.parse(JSON.stringify(eventsList));
 
+// collects all the titles of the events
 var titles = [];
 var dow = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
 for(var i = 0; i < eventList.length; i++){
@@ -9,6 +10,7 @@ for(var i = 0; i < eventList.length; i++){
 }
 
 if(titles.includes(eventName)){
+  // finds the proper name of the day based on a 3-character string
   var dayName;
   for(var i = 0; i < eventList.length; i++){
     if(eventList[i].title.replaceAll('\n', ' ').replaceAll(' ', '_') == eventName){
@@ -20,6 +22,8 @@ if(titles.includes(eventName)){
           dayName = dow[j];
         }
       }
+      // generates a QR code using the qrcodejs library
+      // the QR code's value is a 12-digit random number
       var rng = Math.floor(100000000000 + Math.random() * 899999999999);
       var col = eventList[i].color;
       var qr = document.querySelector('.ticketQR');
@@ -32,11 +36,17 @@ if(titles.includes(eventName)){
         correctLevel:QRCode.CorrectLevel.H
       });
       
+      // removes the image element from the generated QR code
+      // and uses its image source as a background image
       qr.querySelector('img').onload = function(){
         qr.style.backgroundImage = `url(${document.querySelector('.ticketQR img').src})`;
         qr.querySelector('img').remove();
       };
       
+      // changes relevant details for the page
+      // this may look like spaghetti code
+      // but assigning them as variables will
+      // only increase space
       var price = eventList[i].price;
       document.querySelector('.nav p').textContent = eventList[i].type;
       document.querySelector('.title').textContent = eventList[i].title;
@@ -67,5 +77,7 @@ if(titles.includes(eventName)){
   }
 }
 else{
+  // if the event doesn't exist, the user is
+  // redirected to a 404 page
   window.location.href = '404.html';
 }
