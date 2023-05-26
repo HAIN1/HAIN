@@ -11,7 +11,13 @@ var form2 = document.querySelectorAll('.form2 input');
 var form3 = document.querySelectorAll('.form3 input');
 var formB = document.querySelectorAll('form button');
 
+// the top card's details will play an
+// animation based on a state's value
 var cardStatus = 0;
+
+// clicking the top card will change the
+// state variable's value and play
+// an animation
 card.addEventListener("click", event =>{
   if(event.target === ticket) return;
   if(cardStatus == 0){
@@ -41,21 +47,20 @@ card.addEventListener("click", event =>{
   }
 });
 
+// immediately takes the user to
+// the top of the page when the
+// site reloads
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
-
-document.body.addEventListener('keyup', event => {
-  if(event.keyCode === 13){
-    document.querySelector('.emEn').value = '';
-  }
-});
 
 var paym = document.querySelectorAll('.paym');
 var hide = document.querySelectorAll('.hide');
 var methods = document.querySelectorAll('.method div');
 var err = 'Fields with ✦ must be filled';
 var page = 1;
+
+// this is the page system for the ticketing system
 formB.forEach(formB => {
   formB.addEventListener('click', event => {
     var noVal = false;
@@ -65,6 +70,8 @@ formB.forEach(formB => {
     methods.forEach(c => { if(c.classList.contains('chosen')){ noCard = false }});
     if(formB.classList.contains('next')){
       if(!noVal && !noCard && page == 2){
+        // if all details are filled, the page will reload
+        // after creating a window with the user's ticket
         modal.style.display = 'none';
         var dTicket = document.getElementById('ticketSend').innerHTML;
         var w = window.open('', '_blank', 'width=482, height=1000');
@@ -83,15 +90,21 @@ formB.forEach(formB => {
         window.location.reload();
       }
       if(page == 1 && !noVal || (!noVal && !noCard && page == 2)){
+        // flips to the next page based on the
+        // state variable's value
         document.querySelector(`.form${page}`).style.display = 'none';
         page++;
         document.querySelector(`.form${page}`).style.display = 'block';
       }
       else{
+        // alerts the user when important fields
+        // doesn't have values
         window.alert(err);
       }
     }
     else{
+      // flips to the next page based on the
+      // state variable's value
       document.querySelector(`.form${page}`).style.display = 'none';
       page--;
       document.querySelector(`.form${page}`).style.display = 'block';
@@ -99,6 +112,8 @@ formB.forEach(formB => {
   });
 });
 
+// choosing googlepay or apple pay will
+// display an error message to the user
 methods.forEach(m => {
   m.addEventListener('click', event => {
     if(m.dataset.method == 'googlepay' || m.dataset.method == 'applepay'){
@@ -113,6 +128,7 @@ methods.forEach(m => {
   });
 });
 
+// clicking "get tickets" will display the ticketing modal
 ticket.addEventListener('click', event => {
   modal.style.display = 'grid';
 });
@@ -120,6 +136,7 @@ closeModal.addEventListener('click', event => {
   modal.style.display = 'none';
 });
 
+// hides the ticket element
 if(document.querySelector('.topCard')){
   document.querySelector('.ticketMainWrapper').style.display = 'none';
 }

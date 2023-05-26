@@ -2,8 +2,11 @@ const logo = document.querySelector('div.logo');
 const dropdown = document.querySelector('div.dropdown');
 const letters = logo.getElementsByTagName('div');
 
+// the logo and dropdown nav menu will play
+// an animation based on a state value
 let state = 0;
 
+// clicking on the logo will change the state variable's value
 logo.addEventListener('click', event => {
   event.stopPropagation();
   if(state == 0){

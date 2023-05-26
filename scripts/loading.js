@@ -1,3 +1,5 @@
+// plays a slideshow that leads to the landing page
+// when it's finished
 var b = document.querySelector('.background');
 setTimeout(function(){ b.style.backgroundImage = `url('images/loading/LP1.png')`; }, 1250 * 0);
 setTimeout(function(){ b.style.backgroundImage = `url('images/loading/LP2.png')`; }, 1250 * 1);
@@ -11,6 +13,7 @@ setTimeout(function(){ b.style.backgroundImage = `url('images/loading/LP9.png')`
 setTimeout(function(){ b.style.backgroundImage = `url('images/loading/LP10.png')`; }, 1250 * 9);
 setTimeout(function(){ window.location.href = 'landing.html'; }, 1250 * 10);
 
+// clicking anywhere will take the user to the landing page
 document.body.addEventListener('click', event =>{
   window.location.href = 'landing.html';
 });
