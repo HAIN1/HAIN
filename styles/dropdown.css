@@ -4,7 +4,6 @@
   position:fixed;
   top:-100%;
   height:100vh;
-  width:100vw;
   z-index:1;
   transition:background-color 300ms ease;
   animation-fill-mode:forwards;
