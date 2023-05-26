@@ -43,11 +43,10 @@ img{
   height:100vh;
 }
 .animCard{
-  font-family:'Agrandir Regular';
   width:fit-content;
   position:absolute;
   z-index:3;
-  font-size:3vw;
+  font: normal 400 max(12px,calc(0.03448px*var(--window-height)))/1.1 Agrandir Regular;
 }
 #forhain1{
   top:21.7vw;
