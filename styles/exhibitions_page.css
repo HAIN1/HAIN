@@ -13,7 +13,7 @@ img{
   user-select:none;
 }
 .background{
-  background-size:100%;
+  background-size:cover;
   background-repeat:no-repeat;
   top:0;
   left:0;
