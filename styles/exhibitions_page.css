@@ -44,7 +44,7 @@ img{
 }
 .animCard{
   width:fit-content;
-  position:absolute;
+  position:relative;
   z-index:3;
   font: normal 400 max(12px,calc(0.03448px*var(--window-height)))/1.1 Agrandir Regular;
 }
