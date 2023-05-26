@@ -46,8 +46,9 @@ img{
   width:fit-content;
   position:relative;
   z-index:3;
-  font: normal 800 max(12px,calc(0.03448px*var(--window-height)))/1.1;
-   font-family:'Agrandir Regular';
+  fon-size:24px;
+  font: normal 800 max(24px,calc(0.03448px*var(--window-height)))/1.1;
+  font-family:'Agrandir Regular';
 }
 #forhain1{
   top:21.7vw;
@@ -67,7 +68,7 @@ img{
 }
 #universal{
   top:50%;
-  left:50%;
+  left:40%;
   translate:-50% -50%;
 }
 section{
