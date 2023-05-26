@@ -46,7 +46,8 @@ img{
   width:fit-content;
   position:relative;
   z-index:3;
-  font: normal 400 max(12px,calc(0.03448px*var(--window-height)))/1.1 Agrandir Regular;
+  font: normal 400 max(24px,calc(0.03448px*var(--window-height)))/1.1;
+   font-family:'Agrandir Regular';
 }
 #forhain1{
   top:21.7vw;
@@ -80,7 +81,7 @@ section > *{
   position:absolute;
 }
 .endFrame{
-  width:94vw;
+  width:90vw;
   height:100%;
 }
 .artist{
