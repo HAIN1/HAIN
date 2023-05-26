@@ -13,7 +13,7 @@ img{
   user-select:none;
 }
 .background{
-  background-size:cover;
+  background-size:100%;
   background-repeat:no-repeat;
   top:0;
   left:0;
@@ -43,12 +43,11 @@ img{
   height:100vh;
 }
 .animCard{
-  width:fit-content;
-  position:relative;
-  z-index:3;
-  font: normal 800 max(calc(0.03448px*var(--window-height)))/1.1;
-  font-size:24px;
   font-family:'Agrandir Regular';
+  width:fit-content;
+  position:absolute;
+  z-index:3;
+  font-size:3vw;
 }
 #forhain1{
   top:21.7vw;
@@ -68,7 +67,7 @@ img{
 }
 #universal{
   top:50%;
-  left:40%;
+  left:50%;
   translate:-50% -50%;
 }
 section{
@@ -82,7 +81,7 @@ section > *{
   position:absolute;
 }
 .endFrame{
-  width:90vw;
+  width:94vw;
   height:100%;
 }
 .artist{
