@@ -32,7 +32,7 @@ a{
   font-family:'Agrandir Wide Light';
   color:var(--lightCol);
   width:20%;
-  height:100vh;
+  height:100%;
   border-right:2px solid var(--lightCol);
   display:flex;
   flex-direction:column;
@@ -62,7 +62,7 @@ a{
 }
 .topDesc{
   display:flex;
-  margin-top:calc(3.89vw + 30px);
+  margin:10% 0;
 }
 .tdOne, .tdTwo{
   width:50%;
