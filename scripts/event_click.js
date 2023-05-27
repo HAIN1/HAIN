@@ -27,7 +27,7 @@ card.addEventListener("click", event =>{
     document.body.style.overflowY = 'auto';
     card.style.animation = 'card linear 300ms';
     card.style.animationFillMode = 'forwards';
-    if(screen.width > 430){
+    if(screen.width < 430){
       title.style.animation = 'title linear 300ms';
       title.style.animationFillMode = 'forwards';
       subtitle.style.animation = 'subtitle linear 300ms';
@@ -40,7 +40,7 @@ card.addEventListener("click", event =>{
     cardStatus--;
     card.style.animation = 'cardRev linear 300ms';
     card.style.animationFillMode = 'forwards';
-    if(screen.width > 430){
+    if(screen.width < 430){
       title.style.animation = 'titleRev linear 300ms';
       title.style.animationFillMode = 'forwards';
       subtitle.style.animation = 'subtitleRev linear 300ms';
