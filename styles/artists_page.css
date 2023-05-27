@@ -145,7 +145,7 @@ sup{
   width:80%;
 }
 .artistRight img{
-  width:75%;
+  width:100%;
   object-fit:contain;
 }
 hr{
@@ -184,6 +184,12 @@ hr{
 }
 
 @media(width < 580px){
+  .description{
+    text-transform:uppercase;
+    text-align:justify;
+    font-size:2.90vw;
+    translate:0vw -7vw;
+  }
   .artistsNav a{
     font-size:8vw;
   }
