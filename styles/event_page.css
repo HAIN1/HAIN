@@ -237,7 +237,7 @@ p{
   margin-top:25px;
 }
 
-@media (width < 430px){
+@media (width < 580px){
   .nav > *{
     font-size:3.5vw;
   }
