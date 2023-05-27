@@ -56,3 +56,16 @@ a{
     height:100vh;
   }
 }
+@media (width < 430px){
+  body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  a{
+    font-size:10.4vw;
+  }
+  .linkWrapper, .linkWrapper:after{
+    width:100%;
+  }
+}

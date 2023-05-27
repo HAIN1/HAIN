@@ -74,13 +74,47 @@ p{
 }
 .listen{
   width:min-content;
-  text-decoration:none;
   color:inherit;
+  transition:color 300ms ease;
+}
+.listen:hover{
+  color:var(--lightHov);
 }
 
-.soundbiteWrapper:nth-child(even) .detailLeft .time{
+.soundbiteWrapper:nth-child(even) .time{
   align-self:end;
 }
 .soundbiteWrapper:nth-child(even){
   flex-direction:row-reverse;
+}
+
+@media (width < 430px){
+  .soundbiteWrapper, .soundbiteWrapper:nth-child(even){
+    flex-direction:column;
+    align-items:center;
+  }
+  .time{
+    font-size: 3.5vw;
+    width: 16vw;
+  }
+  .detailLeft img{
+    align-self:end;
+  }
+  .title{
+    align-self:end;
+    width:fit-content;
+  }
+  .soundbiteWrapper > div{
+    width:100%;
+  }
+  .description, .listen{
+    font-size:3.25vw;
+  }
+  .soundbiteWrapper:nth-child(even) img, .soundbiteWrapper:nth-child(even) .time, .soundbiteWrapper:nth-child(even) .title{
+    align-self:start;
+  }
+  .soundbiteWrapper:nth-child(odd) img, .soundbiteWrapper:nth-child(odd) .time, .soundbiteWrapper:nth-child(odd) .description, .soundbiteWrapper:nth-child(odd) .listen{
+    align-self:end;
+    text-align:right;
+  }
 }

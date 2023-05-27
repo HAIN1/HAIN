@@ -19,6 +19,7 @@ p{
 .arrow{
   position:absolute;
   left:50%;
+  translate:-50% 0%;
   bottom:1vw;
   font-size:3.5vw;
 }
@@ -236,4 +237,46 @@ p{
   font-family:'Arimo Regular';
   font-size:25px;
   margin-top:25px;
+}
+
+@media (width < 430px){
+  .nav > *{
+    font-size:3.5vw;
+  }
+  .texts{
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    width:74vw;
+  }
+  .title, .dateDetails > *{
+    font-size:10vw;
+  }
+  .title{
+    width:auto;
+  }
+  .subtitle{
+    margin-top: 3vw;
+    margin-left: 4vw;
+    font-size: 5vw;
+  }
+  .botCard{
+    flex-direction:column-reverse;
+  }
+  .botRightCard{
+    width:90%;
+  }
+  .botRightCard pre{
+    width:90%;
+    font-size:4.2vw;
+    line-height:5.8vw;
+  }
+  .botLeftCard p:first-child{
+    width: 150%;
+    align-self: start;
+    padding-bottom: 8vw;
+  }
+  .arrow{
+    font-size: 11vw;
+  }
 }

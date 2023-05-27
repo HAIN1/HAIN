@@ -101,3 +101,61 @@ body:has(.calCell:hover) .foregroundOverlay{
   background-color:var(--lightCol);
   display:block;
 }
+
+@media (width < 900px){
+  .marqueeWrapper{
+    display:none;
+  }
+  .calendarWrapper{
+    width:100%;
+  }
+  .foregroundOverlay{
+    width:100vw;
+    pointer-events:none;
+  }
+  body:has(.calCell:hover) .foregroundOverlay{
+    background-color:transparent;
+    opacity:0.15;
+  }
+}
+@media (width < 430px){
+  .textsWrapper p{
+    font-size:calc(1.5vw + 3vw);
+  }
+  .calRow{
+    overflow:hidden;
+  }
+  .calMonth, .calHeader{
+    font-size:5vw;
+  }
+  .calMonth{
+    width:0em;
+    display:flex;
+  }
+  .calMonth p{
+    margin-block: 0px;
+    background-image: linear-gradient(to right, var(--lightHov), transparent);
+    height: min-content;
+    padding: 0.5vw;
+    padding-right: 50vw;
+  }
+  .calText{
+    font-size:3vw;
+  }
+  .calCellWrapper, .calText{
+    width:max-content;
+  }
+  .calCellWrapper{
+    white-space:nowrap;
+    overflow:auto;
+    display:flex;
+  }
+  .calCell{
+    height: 10em;
+    width: 9em;
+    float:none;
+    display:inline-block;
+    padding-right: 10vw;
+    padding-top: 5vw;
+  }
+}

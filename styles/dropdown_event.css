@@ -43,3 +43,14 @@ body:has(.dropdownLink:hover) .logo, body:has(.dropdownLink:hover) .dropdownLink
   0%{ top:0%; }
   100%{ top:-100%; }
 }
+
+@media (width < 430px){
+  .dropdownLinkContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100%;
+    width:-webkit-fill-available;
+  }
+  .dropdownLink{ font-size:9.45vw; }
+}

@@ -71,3 +71,14 @@
   0%{ translate:0% 150%; }
   100%{ translate:0% 0%; }
 }
+
+@media (width < 430px){
+  .logo{
+    height: calc(3.89vw * 2);
+    width: calc(3.89vw * 2);
+  }
+  .logo > div{
+    height: calc(1.945vw * 2);
+    width: calc(1.945vw * 2);
+  }
+}

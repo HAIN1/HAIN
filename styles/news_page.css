@@ -54,6 +54,7 @@ img{
   align-items:center;
   justify-content:flex-end;
   height:100vh;
+  pointer-events:none;
 }
 
 .background{
@@ -84,4 +85,14 @@ body:has(.khaleejTimes:hover) img:not(#khaleejTimes){ opacity:0; }
   .background{
     height:100%;
   }
+}
+@media (width < 430px){
+  .newsList{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .link{ height:8.4675vw; }
+  a{ font-size:7.175vw; }
 }

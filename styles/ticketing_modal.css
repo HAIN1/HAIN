@@ -5,7 +5,8 @@
   top:0;
   left:0;
   display:none;
-  place-items:center;
+  justify-content:center;
+  align-items:center;
   background-color:hsl(0, 0%, 0%, 75%);
   z-index:10;
 }
@@ -195,10 +196,10 @@ p sup{
   flex-direction:column;
 }
 .modalTicketCounter hr{
-    width: 100%;
-    border: none;
-    height: 1px;
-    background-color: var(--eventCol);
+  width:100%;
+  border:none;
+  height:1px;
+  background-color:var(--eventCol);
 }
 .ticketWrapper > div{
   float:left;
@@ -239,4 +240,11 @@ p sup{
   font-size:3vh;
   cursor:pointer;
   user-select:none;
+}
+
+@media (width < 600px){
+  .modalMain{ scale:0.8; }
+}
+@media (width < 480px){
+  .modalMain{ scale:0.6; }
 }

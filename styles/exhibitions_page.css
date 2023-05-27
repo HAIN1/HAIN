@@ -1,6 +1,6 @@
 html{
   overflow-y:hidden;
-  /* overflow-x:hidden; */
+  overflow-x:hidden;
 }
 body{
   margin:0px;
@@ -97,337 +97,107 @@ section > *{
 .view{
   border:2px solid;
   padding:0.75em 1em;
-  width:13vw;
+  width:199.675px;
   text-align:center;
-  font-size:1vw;
+  font-size:1em;
   cursor:pointer;
   user-select:none;
 }
 
-.winniecelestine{
-  background-color:#403B3B;
-  color:var(--lightCol);
-  width:106vw;
-}
-.winniecelestine .view{
-  bottom:1.4vw;
-  right:56vw;
-}
-.winniecelestine .wallart{
-  height:100%;
-}
-.winniecelestine .art1{
-  top:50vh;
-  translate:0px -50%;
-  right:20vw;
-  scale:0.8;
-}
-.winniecelestine .art2{
-  top:50vh;
-  translate:0px -50%;
-  right:0vw;
-  scale:0.8;
-}
-.winniecelestine .artistName{
-  right:33vw;
-  bottom:7vw;
-}
-.winniecelestine .artName{
-  bottom:5vw;
-  right:51vw;
-}
+.winniecelestine{ background-color:#403B3B; color:var(--lightCol); }
+.winniecelestine{ width:1628.150px; }
+.winniecelestine .artistName, .chloerosales .artistName, .skaimalik .artistName, .ronaldoalfonso .artistName, .suedolores .artistName, .bernicerowe .artistName, .ahmedhashem .artistName, .sabipratik .artistName, .peterchan .artistName{ font-size:76.8px; }
+.winniecelestine .artName, .chloerosales .artName, .skaimalik .artName, .ronaldoalfonso .artName, .suedolores .artName, .ahmedhashem .artName{ font-size:46.08px; }
+.winniecelestine .artistName{ bottom:107.520px; left:531.287px; }
+.winniecelestine .artName{ bottom:76.800px; left:528.588px; }
+.winniecelestine .view{ bottom:21.504px; left:533.125px; }
+.winniecelestine .wallart{ height:100%; }
+.winniecelestine .art1, .winniecelestine .art2{ scale:0.8; top:50%; translate:0px -50%; }
+.winniecelestine .art1{ right:307.200px; }
+.winniecelestine .art2{ right:0; }
 
-.chloerosales{
-  background-color:#353628;
-  color:var(--lightCol);
-  width:76vw;
-}
-.chloerosales .view{
-  left:0.5vw;
-  top:9vw;
-}
-.chloerosales img{
-  scale:0.8;
-}
-.chloerosales .art1{
-  top:50%;
-  translate:0% -50%;
-  left:-4.7vw;
-}
-.chloerosales .art2{
-  right:18vw;
-}
-.chloerosales .art3{
-  right:18vw;
-  bottom:0;
-}
-.chloerosales .art4{
-  top:50%;
-  translate:0% -50%;
-  right:0;
-}
-.chloerosales .artName{
-  top:5vw;
-}
+.chloerosales, .skaimalik, .ronaldoalfonso{ width:1167.350px; }
+.chloerosales{ background-color:#353628; color:var(--lightCol); }
+.chloerosales img{ scale:0.8; }
+.chloerosales .artistName{ top:0; left:0; }
+.chloerosales .artName{ top:76.800px; left:0; }
+.chloerosales .view{ top:138.240px; left:7.680px; }
+.chloerosales .art1{ top:50%; translate:0% -50%; left:-72.192px; }
+.chloerosales .art2{ top:0; right:276.480px; }
+.chloerosales .art3{ bottom:0; right:276.480px; }
+.chloerosales .art4{ top:50%; translate:0% -50%; right:0; }
 
-.skaimalik{
-  background-color:#F2EDEC;
-  color:var(--darkCol);
-  width:76vw;
-}
-.skaimalik .view{
-  bottom:4.7vw;
-  right:19vw;
-}
-.skaimalik .artistName{
-  bottom:12vw;
-  right:19vw;
-}
-.skaimalik .artName{
-  bottom:9vw;
-  left:15vw;
-}
-.skaimalik img{
-  top:5vw;
-  scale:0.8;
-}
-.skaimalik .art1{
-  left:-4.7vw;
-}
-.skaimalik .art2{
-  right:-4.7vw;
-}
+.skaimalik{ background-color:#F2EDEC; color:var(--darkCol); }
+.skaimalik img{ top:76.800px; scale:0.8; }
+.skaimalik .artistName{ bottom:184.320px; right:291.840px }
+.skaimalik .artName{ bottom:138.240px; left:230.400px }
+.skaimalik .view{ bottom:72.192px; right:291.840px }
+.skaimalik .art1{ left:-72.192px; }
+.skaimalik .art2{ right:-72.192px; }
 
-.ronaldoalfonso{
-  background-color:#413227;
-  color:var(--lightCol);
-  width:76vw;
-}
-.ronaldoalfonso img{
-  top:50%;
-  translate:0% -50%;
-  scale:0.9;
-}
-.ronaldoalfonso .artistName{
-  width:min-content;
-  left:8.8vw;
-}
-.ronaldoalfonso .artName{
-  bottom:6vw;
-  left:8.8vw;
-}
-.ronaldoalfonso .view{
-  bottom:2vw;
-  left:8.8vw;
-}
-.ronaldoalfonso .art1{
-  left:7vw;
-}
-.ronaldoalfonso .art2{
-  left:50%;
-  translate:-50% -50%;
-}
-.ronaldoalfonso .art3{
-  right:7vw;
-}
+.ronaldoalfonso{ background-color:#413227; color:var(--lightCol); }
+.ronaldoalfonso img{ top:50%; translate:0% -50%; scale:0.9; }
+.ronaldoalfonso .artistName{ width:min-content; top:0; left:135.168px; }
+.ronaldoalfonso .artName{ bottom:92.160px; left:135.168px; }
+.ronaldoalfonso .view{ bottom:30.720px; left:135.168px; }
+.ronaldoalfonso .art1{ left:107.520px; }
+.ronaldoalfonso .art2{ left:50%; translate:-50% -50%; }
+.ronaldoalfonso .art3{ right:107.520px; }
 
-.suedolores{
-  background-color:#4E4E4E;
-  color:var(--lightCol);
-  width:100vw;
-}
-.suedolores .art1{
-  height:100%;
-}
-.suedolores .artistName{
-  bottom:10vw;
-  left:25vw;
-}
-.suedolores .artName{
-  bottom:6.5vw;
-  left:25vw;
-}
-.suedolores .view{
-  bottom:1vw;
-  left:25vw;
-}
+.suedolores{ width:1536px; background-color:#4E4E4E; color:var(--lightCol); }
+.suedolores .artistName{ bottom:153.600px; left:384px; }
+.suedolores .artName{ bottom:99.840px; left:384px; }
+.suedolores .view{ bottom:15.360px; left:384px; }
+.suedolores .art1{ height:100%; }
 
-.harveytrahab{
-  background-color:#212121;
-  color:var(--lightCol);
-  width:45vw;
-}
-.harveytrahab .artistName{
-  font-size:4.5vw;
-  right:12.4vw;
-  top:2vw;
-}
-.harveytrahab .artName{
-  font-size:4vw;
-  right:12.4vw;
-  top:6.7vw;
-}
-.harveytrahab .view{
-  right:12.4vw;
-  top:12vw;
-}
-.harveytrahab img{
-  scale:0.8;
-}
-.harveytrahab .art1{
-  bottom:10vw;
-  left:-27.4vw;
-}
-.harveytrahab .art2{
-  bottom:5vw;
-  left:-22.8vw;
-}
-.harveytrahab .art3{
-  bottom:5vw;
-  left:-4vw;
-}
-.harveytrahab .art4{
-  bottom:5vw;
-  left:14.8vw;
-}
+.harveytrahab{ width:691.200px; background-color:#212121; color:var(--lightCol); }
+.harveytrahab img{ scale:0.8; }
+.harveytrahab .artistName{ font-size:69.12px; top:30.720px; right:190.464px; }
+.harveytrahab .artName{ font-size:61.44px; top:102.912px; right:190.464px; }
+.harveytrahab .view{ top:184.320px; right:190.464px; }
+.harveytrahab .art1{ bottom:153.600px; right:88.063px; }
+.harveytrahab .art2{ bottom:76.800px; left:-350.208px; }
+.harveytrahab .art3{ bottom:76.800px; left:-61.440px; }
+.harveytrahab .art4{ bottom:76.800px; left:227.328px; }
 
-.bernicerowe{
-  background-color:#212121;
-  color:var(--lightCol);
-  width:70vw;
-  z-index:2;
-}
-.bernicerowe .artistName{
-  width:min-content;
-}
-.bernicerowe .artName{
-  font-size:4.5vw;
-  bottom:6vw;
-  left:5.9vw;
-}
-.bernicerowe .view{
-  bottom:3vw;
-  left:11vw;
-}
-.bernicerowe .art1{
-  right:0;
-  height:100%;
-}
-.bernicerowe .art2{
-  scale:0.8;
-  top:1vw;
-  right:-19vw;
-}
-.bernicerowe .art3{
-  top:50%;
-  left:13.5vw;
-  translate:0% -50%;
-  scale:0.8;
-}
-.bernicerowe .art4{
-  scale:0.8;
-  bottom:1vw;
-  right:-19vw;
-}
+.bernicerowe{ width:1075.200px; background-color:#212121; color:var(--lightCol); z-index:2; }
+.bernicerowe .artistName{ top:0; left:0; }
+.bernicerowe .artName{ width:min-content; font-size:69.12px; bottom:92.160px; left:90.624px; }
+.bernicerowe .view{ bottom:46.080px; left:168.960px; }
+.bernicerowe .art1{ right:0; height:100%; }
+.bernicerowe .art2, .bernicerowe .art3, .bernicerowe .art4{ scale:0.8; }
+.bernicerowe .art2{ top:15.360px; right:-291.840px; }
+.bernicerowe .art3{ top:50%; translate:0% -50%; left:207.360px; }
+.bernicerowe .art4{ bottom:15.360px; right:-291.840px; }
 
-.ahmedhashem{
-  background-color:#FEEEDF;
-  color:#D73317;
-  width:130vw;
-}
-.ahmedbackg{
-  background-color:#D73317;
-  height:100%;
-  right:0;
-  width:80.3vw;
-}
-.ahmedhashem .artistName{
-  width:min-content;
-  left:27vw;
-  top:12vw;
-}
-.ahmedhashem .artName{
-  left:30vw;
-  top:26vw;
-}
-.ahmedhashem .view{
-  left:30vw;
-  bottom:15.5vw;
-}
-.ahmedhashem img{
-  height:100%;
-  scale:0.95;
-}
-.ahmedhashem .art1{
-  right:49.5vw;
-}
-.ahmedhashem .art2{
-  right:17vw;
-}
+.ahmedhashem{ background-color:#FEEEDF; color:#D73317; }
+.ahmedhashem{ width:1996.800px; }
+.ahmedhashem img{ height:100%; scale:0.95; }
+.ahmedhashem .artistName{ width:min-content; top:184.320px; left:414.720px; }
+.ahmedhashem .artName{ top:399.360px; left:460.800px; }
+.ahmedhashem .view{ top:459.525px; left:460.800px; }
+.ahmedhashem .art1{ left:750px; }
+.ahmedhashem .art2{ left:1249.200px; }
+.ahmedbackg{ width:1233.400px; background-color:#D73317; height:100%; right:0; }
 
-.sabipratik, .peterchan{
-  background-color:#412727;
-  color:var(--lightCol);
-}
+.sabipratik, .peterchan{ background-color:#412727; color:var(--lightCol); }
+.sabipratik{ width:737.275px; }
+.sabipratik img{ scale:0.8; }
+.sabipratik .artistName{ width:min-content; text-align:right; bottom:138.240px; left:99.840px; }
+.sabipratik .artName{ font-size:35.328px; bottom:76.800px; left:-59.904px; }
+.sabipratik .view{ bottom:30.720px; left:-15.360px; }
+.sabipratik .art1{ top:-44.544px; right:-72.192px; }
+.sabipratik .art2{ bottom:-230.400px; right:-46.080px; }
 
-.sabipratik{
-  width:48vw;
-}
-.sabipratik .artistName{
-  width:min-content;
-  left:6.5vw;
-  bottom:9vw;
-  text-align:right;
-}
-.sabipratik .artName{
-  font-size:2.3vw;
-  bottom:5vw;
-  left:-3.9vw;
-}
-.sabipratik .view{
-  bottom:2vw;
-  left:-1vw;
-}
-.sabipratik img{
-  scale:0.8;
-}
-.sabipratik .art1{
-  top:-2.9vw;
-  right:-4.7vw;
-}
-.sabipratik .art2{
-  bottom:-15vw;
-  right:-3vw;
-}
-
-.peterchan{
-  width:123vw;
-}
-.peterchan .artistName{
-  width:min-content;
-  left:11vw;
-}
-.peterchan .artName{
-  left:11vw;
-  bottom:6.5vw;
-  font-size:2.2vw;
-}
-.peterchan .view{
-  left:11vw;
-  bottom:2.5vw;
-}
-.peterchan img{
-  height:100%;
-}
-.peterchan .art1{
-  right:57.6vw;
-}
-.peterchan .art2{
-  right:28.8vw;
-}
-.peterchan .art3{
-  right:0;
-}
+.peterchan{ width:1889.280px; }
+.peterchan img{ height:100%; }
+.peterchan .artistName{ width:min-content; }
+.peterchan .artistName{ top:0; left:0; }
+.peterchan .artName{ font-size:33.792px; bottom:99.840px; left:168.960px; }
+.peterchan .view{ bottom:38.400px; left:168.960px; }
+.peterchan .art1{ right:444px; }
+.peterchan .art2{ right:888px; }
+.peterchan .art3{ right:0; }
 
 .final{
   background-color:var(--lightCol);
@@ -518,4 +288,41 @@ section > *{
   z-index:10;
   top:0;
   right:0;
+}
+
+@media (width <= 430px){
+  .background, .background2{
+    background-position: -27.5em 0px;
+  }
+  .animCard{
+    font-size: 2em;
+  }
+  #forhain1{
+    top: 7.5em;
+    left: 0.1em;
+  }
+  .creatives{
+    top: 9em;
+    left: 4.5em;
+  }
+  #presenthowfoodis{
+    top: 10.5em;
+    left: 0.1em;
+  }
+  #auniversallanguage{
+    top: 13.7em;
+    left: 0.6em;
+  }
+  #universal{
+    text-align: center;
+    width: 100%;
+  }
+  .final, .cardWrapper{ width:100vw; }
+  .cardWrapper{ overflow:auto; }
+  .cardMain{ padding:6em 0; }
+}
+@media (width <= 1130px){
+  .background, .background2{
+    background-size:cover
+  }
 }
