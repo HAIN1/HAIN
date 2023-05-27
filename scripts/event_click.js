@@ -130,7 +130,7 @@ methods.forEach(m => {
 
 // clicking "get tickets" will display the ticketing modal
 ticket.addEventListener('click', event => {
-  modal.style.display = 'grid';
+  modal.style.display = 'flex';
 });
 closeModal.addEventListener('click', event => {
   modal.style.display = 'none';
