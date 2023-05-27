@@ -22,7 +22,7 @@ card.addEventListener("click", event =>{
   if(event.target === ticket) return;
   
   // won't play the animation if the screen width is less than 430px
-  if(screen.width < 430){
+  if(screen.width > 430){
     if(cardStatus == 0){
       cardStatus++;
       document.body.style.overflowY = 'auto';
