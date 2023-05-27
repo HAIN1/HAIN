@@ -22,12 +22,12 @@ card.addEventListener("click", event =>{
   if(event.target === ticket) return;
   
   // won't play the animation if the screen width is less than 430px
-  if(screen.width > 430){
-    if(cardStatus == 0){
-      cardStatus++;
-      document.body.style.overflowY = 'auto';
-      card.style.animation = 'card linear 300ms';
-      card.style.animationFillMode = 'forwards';
+  if(cardStatus == 0){
+    cardStatus++;
+    document.body.style.overflowY = 'auto';
+    card.style.animation = 'card linear 300ms';
+    card.style.animationFillMode = 'forwards';
+    if(screen.width > 430){
       title.style.animation = 'title linear 300ms';
       title.style.animationFillMode = 'forwards';
       subtitle.style.animation = 'subtitle linear 300ms';
@@ -35,19 +35,21 @@ card.addEventListener("click", event =>{
       date.style.animation = 'date linear 300ms';
       date.style.animationFillMode = 'forwards';
     }
-    else{
-      cardStatus--;
-      card.style.animation = 'cardRev linear 300ms';
-      card.style.animationFillMode = 'forwards';
+  }
+  else{
+    cardStatus--;
+    card.style.animation = 'cardRev linear 300ms';
+    card.style.animationFillMode = 'forwards';
+    if(screen.width > 430){
       title.style.animation = 'titleRev linear 300ms';
       title.style.animationFillMode = 'forwards';
       subtitle.style.animation = 'subtitleRev linear 300ms';
       subtitle.style.animationFillMode = 'forwards';
       date.style.animation = 'dateRev linear 300ms';
       date.style.animationFillMode = 'forwards';
-      document.body.style.overflowY = 'hidden';
-      window.scrollTo(0, 0);
     }
+    document.body.style.overflowY = 'hidden';
+    window.scrollTo(0, 0);
   }
 });
 
