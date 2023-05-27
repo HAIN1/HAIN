@@ -2,7 +2,7 @@
   user-select:none;
   background-color:var(--lightCol);
   position:fixed;
-  top:-100%;
+  top:100%;
   height:100vh;
   width:100vw;
   z-index:1;
