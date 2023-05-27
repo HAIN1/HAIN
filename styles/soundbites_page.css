@@ -88,7 +88,7 @@ p{
   flex-direction:row-reverse;
 }
 
-@media (width < 430px){
+@media (width < 580px){
   .soundbiteWrapper, .soundbiteWrapper:nth-child(even){
     flex-direction:column;
     align-items:center;

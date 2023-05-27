@@ -44,7 +44,7 @@ body{
   font-family:'Agrandir Regular';
 }
 
-@media (width < 430px){
+@media (width < 580px){
   .text{
     font-size:4.7vw;
     width:90%;

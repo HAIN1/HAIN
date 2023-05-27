@@ -242,9 +242,9 @@ p sup{
   user-select:none;
 }
 
-@media (width < 600px){
+@media (width < 800px){
   .modalMain{ scale:0.8; }
 }
-@media (width < 480px){
-  .modalMain{ scale:0.6; }
+@media (width < 580px){
+  .modalMain{ scale:0.59; }
 }

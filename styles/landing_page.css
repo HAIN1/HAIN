@@ -56,7 +56,7 @@ a{
     height:100vh;
   }
 }
-@media (width < 430px){
+@media (width < 580px){
   body{
     display:flex;
     flex-direction:column;

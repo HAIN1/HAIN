@@ -44,7 +44,7 @@ body:has(.dropdownLink:hover) .logo, body:has(.dropdownLink:hover) .dropdownLink
   100%{ top:-100%; }
 }
 
-@media (width < 430px){
+@media (width < 580px){
   .dropdownLinkContainer{
     display:flex;
     flex-direction:column;

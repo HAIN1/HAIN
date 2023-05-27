@@ -86,7 +86,7 @@ body:has(.khaleejTimes:hover) img:not(#khaleejTimes){ opacity:0; }
     height:100%;
   }
 }
-@media (width < 590px){
+@media (width < 580px){
   .newsList{
     height:100vh;
     display:flex;

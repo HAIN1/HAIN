@@ -69,7 +69,7 @@
   100%{ translate:0% 0%; }
 }
 
-@media (width < 430px){
+@media (width < 580px){
   .logo{
     height: calc(3.89vw * 2);
     width: calc(3.89vw * 2);

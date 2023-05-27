@@ -118,7 +118,7 @@ body:has(.calCell:hover) .foregroundOverlay{
     opacity:0.15;
   }
 }
-@media (width < 430px){
+@media (width < 580px){
   .textsWrapper p{
     font-size:calc(1.5vw + 3vw);
   }
@@ -134,7 +134,7 @@ body:has(.calCell:hover) .foregroundOverlay{
   }
   .calMonth p{
     margin-block: 0px;
-    background-image: linear-gradient(to right, var(--lightHov), transparent);
+   
     height: min-content;
     padding: 0.5vw;
     padding-right: 50vw;

@@ -183,7 +183,7 @@ hr{
   100%{ scale:1 }
 }
 
-@media(width < 430px){
+@media(width < 580px){
   .artistsNav a{
     font-size:8vw;
   }

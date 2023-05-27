@@ -290,7 +290,7 @@ section > *{
   right:0;
 }
 
-@media (width <= 430px){
+@media (width <= 580px){
   .background, .background2{
     background-position: -27.5em 0px;
   }
