@@ -2,6 +2,7 @@
   user-select:none;
   background-color:var(--darkCol);
   position:fixed;
+  display:none;
   top:-100%;
   height:100vh;
   width:100vw;
@@ -44,7 +45,7 @@ body:has(.dropdownLink:hover) .logo, body:has(.dropdownLink:hover) .dropdownLink
   100%{ top:-100%; }
 }
 
-@media (width < 580px){
+@media (width < 430px){
   .dropdownLinkContainer{
     display:flex;
     flex-direction:column;
