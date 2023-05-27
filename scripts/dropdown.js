@@ -11,6 +11,7 @@ logo.addEventListener('click', event => {
   event.stopPropagation();
   if(state == 0){
     state++;
+    dropdown.style.display = 'block';
     dropdown.style.animation = 'dropping-in ease 0.5s';
     dropdown.style.animationFillMode = 'forwards';
     letters[0].style.animation = 'Hain-in ease 0.5s';
@@ -33,3 +34,9 @@ logo.addEventListener('click', event => {
     }
   }
 });
+
+dropdown.addEventListener('animationend', event => {
+  if(state == 0){
+    dropdown.style.display = 'none';
+  }
+})
